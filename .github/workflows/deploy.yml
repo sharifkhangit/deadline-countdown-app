@@ -3,7 +3,7 @@ name: Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main  # triggers on pushes to main branch
+      - release  # triggers on pushes to main branch
 
 jobs:
   deploy:
