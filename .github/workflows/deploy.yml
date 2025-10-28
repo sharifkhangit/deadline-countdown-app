@@ -29,3 +29,5 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/browser
+      - name: List dist contents
+        run: ls -R dist
