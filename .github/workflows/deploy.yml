@@ -23,11 +23,11 @@ jobs:
 
       - name: Build project
         run: npm run build -- --base-href=/deadline-countdown-app/
-
+      - name: List dist contents
+        run: ls -R dist
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist/browser
-      - name: List dist contents
-        run: ls -R dist
+      
