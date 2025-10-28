@@ -1,0 +1,14 @@
+<div class="countdown-shell">
+  <div *ngIf="loading">Loading deadline…</div>
+
+  <div *ngIf="!loading && !error">
+    <div *ngIf="secondsLeft > 0; else expired">
+      <h2>Seconds left to deadline: <strong>{{ secondsLeft }}</strong></h2>
+    </div>
+    <ng-template #expired>
+      <h2 class="expired">Deadline reached.</h2>
+    </ng-template>
+  </div>
+
+  <div *ngIf="error" class="error">Error: {{ error }}</div>
+</div>

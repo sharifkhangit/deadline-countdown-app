@@ -1,0 +1,62 @@
+<section class="landing">
+  <div class="hero">
+    <h1>⏳ 6Crickets — Deadline Countdown Demo</h1>
+    <p class="subtitle">
+      A clean, modern Angular 20 application demonstrating a real-time countdown timer 
+      that retrieves data from a mock API endpoint and updates seamlessly.
+    </p>
+    <a class="btn primary" routerLink="/countdown">View Countdown</a>
+  </div>
+
+  <section class="details">
+    <h2>🔍 Project Overview</h2>
+    <p>
+      This demo showcases modern Angular best practices — 
+      <strong>standalone components</strong>, 
+      <strong>OnPush change detection</strong>, and 
+      <strong>mock API integration</strong> — wrapped in a scalable project structure.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>&#128269; Tech Stack</h3>
+        <ul>
+          <li>Angular 20 (standalone APIs)</li>
+          <li>RxJS for reactive updates</li>
+          <li>SCSS for styling</li>
+          <li>Mock API via HTTP Interceptor</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>&#128295; Architecture</h3>
+        <ul>
+          <li>Core services for API handling</li>
+          <li>Feature module for countdown</li>
+          <li>Interceptor for backend mocking</li>
+          <li>Centralized theme variables</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>&#128640; Highlights</h3>
+        <ul>
+          <li>Performance optimized with OnPush</li>
+          <li>Fully responsive, minimal layout</li>
+          <li>Clean code with consistent conventions</li>
+          <li>No warnings or dependency conflicts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="meta">
+    <h2>&#129505; How It Works</h2>
+    <ol>
+      <li>The landing page introduces the project and links to the countdown feature.</li>
+      <li>The countdown component calls <code>/api/deadline</code> (mocked by the interceptor).</li>
+      <li>The response gives <code>secondsLeft</code> which initializes a timer.</li>
+      <li>The timer decrements every second until the deadline is reached.</li>
+    </ol>
+  </section>
+</section>

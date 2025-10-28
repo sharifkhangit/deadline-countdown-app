@@ -1,0 +1,16 @@
+.countdown-shell {
+    padding: 3rem 1rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .expired {
+        color: #d92f2f;
+    }
+
+    .error {
+        color: #b91c1c;
+    }
+}
