@@ -1,14 +1,16 @@
 <div class="countdown-shell">
-  <div *ngIf="loading">Loading deadline…</div>
+  <div *ngIf="loading" class="status loading">Fetching deadline…</div>
 
-  <div *ngIf="!loading && !error">
+  <div *ngIf="!loading && !error" class="timer-card">
     <div *ngIf="secondsLeft > 0; else expired">
-      <h2>Seconds left to deadline: <strong>{{ secondsLeft }}</strong></h2>
+      <h2>⏳ Time Remaining</h2>
+      <p class="count">{{ secondsLeft }} seconds</p>
     </div>
     <ng-template #expired>
-      <h2 class="expired">Deadline reached.</h2>
+      <h2 class="expired">✅ Deadline Reached</h2>
+      <p class="message">All tasks should now be completed.</p>
     </ng-template>
   </div>
 
-  <div *ngIf="error" class="error">Error: {{ error }}</div>
+  <div *ngIf="error" class="status error">⚠️ {{ error }}</div>
 </div>
